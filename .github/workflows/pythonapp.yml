@@ -2,7 +2,7 @@ name: Python application test with GitHub Actions
 on: [push]
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.10
@@ -25,4 +25,3 @@ jobs:
     - name: Build Container
       run: |
         make build
-        
